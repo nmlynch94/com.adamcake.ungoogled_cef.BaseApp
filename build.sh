@@ -15,7 +15,7 @@ patch -p1 --directory=third_party/node < third_party/node/patches/types_trusted_
 
 # symlink llvm for chromium to use
 mkdir -p third_party/llvm-build
-ln -s /app/lib/sdk/llvm21 $FLATPAK_BUILDER_BUILDDIR/third_party/llvm-build/Release+Asserts
+ln -s /usr/lib/sdk/llvm21 $FLATPAK_BUILDER_BUILDDIR/third_party/llvm-build/Release+Asserts
 
 #https://github.com/flathub/io.github.ungoogled_software.ungoogled_chromium/blob/3673d6bfd7d8947bd0736e49cdc8c738d0f07bfb/build-aux/build.sh#L55
 mkdir -p bindgen/bin
